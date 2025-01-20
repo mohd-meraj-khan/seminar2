@@ -3,9 +3,9 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: figures/sundog.jpg#https://cover.sli.dev
+background: /figures/sundog.jpg
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: Seminar II
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -19,16 +19,30 @@ drawings:
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
-mdc: true
+mdc: false
 ---
 
 ## Lattice Boltzmann Method for Electromagnetic Wave Scattering and Radiation Force Computation
 
-
 Mohd Meraj Khan
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+<div class="text-3.5 mt-10">
+  <b>Advisor:</b> Prof. Anubhab Roy <br>
+  <b>Co-advisor:</b> Prof. Sumesh P. Thampi
+</div>
+
+<div class="mt-5 py-1" >
+  Seminar II <br>
+  February 5, 2025
+</div>
+
+<div class="flex items-center justify-center mt-10">
+  <img src="/figures/IITM_Logo.png" alt="" class="h-20 w-20">
+</div>
+
+<div class="text-3 mt-10">
+  Fluid mechanics division, Department of Applied Mechanics and Biomedical Engineering <br>
+  Indian Institute of Technology Madras, Chennai, India, 600036
 </div>
 
 <div class="abs-br m-6 text-xl">
@@ -37,12 +51,193 @@ Mohd Meraj Khan
   </a>
 </div>
 
+<div class="abs-br m-1 text-2">
+  Background image: https://pixabay.com
+</div>
+
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
-transition: fade-out
+
+
+# Electromagnetic spectrum
+
+<div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+    <img src="/figures/EM_Spectrum_Properties_edit.svg" alt="Image 1" style="max-height: 100%; width: auto;">
+</div>
+
+
+<div class="abs-br m-1 text-2">
+  Image source: wikipedia
+</div>
+
+---
+
+
+
+# Scattering regimes
+
+
+
+
+---
+
+# Electromagnetic spectrum
+
+<div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+    <img src="/figures/Electromagnetic_spectrum,_NASA_illustration.jpeg" alt="Image 1" style=" width: auto;">
+</div>
+
+
+<div class="abs-br m-1 text-2">
+  Image source: wikipedia
+</div>
+
+
+---
+
+## Scattering of Electromagnetic Waves
+
+<div class="grid grid-cols-3 gap-6">
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 1" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 1
+      <div class="text-2 text-gray-500">Source: Example Source 1</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 2" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 2
+      <div class="text-2 text-gray-500">Source: Example Source 2</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 3" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 3
+      <div class="text-2 text-gray-500">Source: Example Source 3</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 1" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 1
+      <div class="text-2 text-gray-500">Source: Example Source 1</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 2" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 2
+      <div class="text-2 text-gray-500">Source: Example Source 2</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 3" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 3
+      <div class="text-2 text-gray-500">Source: Example Source 3</div>
+    </figcaption>
+  </figure>
+</div>
+
+
+
+
+
+---
+
+
+# Radiation Force
+
+
+<div class="grid grid-cols-4 gap-4">
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 1" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 1
+      <div class="text-2 text-gray-500">Source: Example Source 1</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 2" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 2
+      <div class="text-2 text-gray-500">Source: Example Source 2</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 3" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 3
+      <div class="text-2 text-gray-500">Source: Example Source 3</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 1" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 1
+      <div class="text-2 text-gray-500">Source: Example Source 1</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 2" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 2
+      <div class="text-2 text-gray-500">Source: Example Source 2</div>
+    </figcaption>
+  </figure>
+  <figure v-click class="text-center">
+    <img src="https://picsum.photos/200/130" alt="Image 3" class="w-full h-auto">
+    <figcaption class="text-sm">
+      Caption for Image 3
+      <div class="text-2 text-gray-500">Source: Example Source 3</div>
+    </figcaption>
+  </figure>
+</div>
+
+
+
+
+
+
+---
+
+
+# Governing Equations
+
+<div class="grid grid-cols-2 gap-4 items-center">
+
+<div>
+
+$$
+\begin{aligned}
+\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
+\nabla \cdot \vec{B} &= 0
+\end{aligned}
+$$
+
+</div>
+
+<div>
+
+$$
+\begin{aligned}
+\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
+\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
+\end{aligned}
+$$
+
+</div>
+
+</div>
+
+
+
 ---
 
 # What is Slidev?
@@ -56,8 +251,8 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 - 🎥 **Recording** - built-in recording and camera view
 - 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
 - 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
+  <br>
+  <br>
 
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
@@ -93,20 +288,22 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ## Keyboard Shortcuts
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animation -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
   alt=""
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
@@ -126,7 +323,7 @@ The title will be inferred from your slide content, or you can override it with 
 
 ::right::
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<Toc text-sm minDepth="1" maxDepth="3" />
 
 ---
 layout: image-right
@@ -142,17 +339,18 @@ Use code snippets and get the highlighting directly, and even types hover!
 // and errors in markdown code blocks
 // More at https://shiki.style/packages/twoslash
 
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+const count = ref(0);
+const doubled = computed(() => count.value * 2);
 
-doubled.value = 2
+doubled.value = 2;
 ```
 
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
+
 <<< @/snippets/external.ts#snippet
 
 <!-- Footer -->
@@ -196,13 +394,13 @@ Add multiple code blocks and wrap them with <code>````md magic-move</code> (four
 ```ts {*|2|*}
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
 
 ```ts {*|1-2|3-4|3-4,8}
@@ -211,16 +409,16 @@ export default {
   data() {
     return {
       author: {
-        name: 'John Doe',
+        name: "John Doe",
         books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
+          "Vue 2 - Advanced Guide",
+          "Vue 3 - Basic Guide",
+          "Vue 4 - The Mystery",
+        ],
+      },
+    };
+  },
+};
 ```
 
 ```ts
@@ -228,15 +426,15 @@ export default {
 export default {
   data: () => ({
     author: {
-      name: 'John Doe',
+      name: "John Doe",
       books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
+        "Vue 2 - Advanced Guide",
+        "Vue 3 - Basic Guide",
+        "Vue 4 - The Mystery",
+      ],
+    },
+  }),
+};
 ```
 
 Non-code blocks are ignored.
@@ -245,13 +443,13 @@ Non-code blocks are ignored.
 <!-- step 4 -->
 <script setup>
 const author = {
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+};
 </script>
 ```
 ````
@@ -319,6 +517,7 @@ theme: default
 theme: seriph
 ---
 ```
+
 
 <img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
 
@@ -457,7 +656,9 @@ LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+
+$$
+{1|2|3|all}
 \begin{aligned}
 \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
 \nabla \cdot \vec{B} &= 0 \\
@@ -596,6 +797,7 @@ src: ./pages/imported-slides.md
 hide: false
 ---
 
+
 ---
 
 # Monaco Editor
@@ -605,10 +807,10 @@ Slidev provides built-in Monaco Editor support.
 Add `{monaco}` to the code block to turn it into an editor:
 
 ```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+import { ref } from "vue";
+import { emptyArray } from "./external";
 
-const arr = ref(emptyArray(10))
+const arr = ref(emptyArray(10));
 ```
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
@@ -622,13 +824,16 @@ console.log(`vue ${version}`)
 console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
 ```
 
+
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Thank you!
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<div h-3>
+</div>
 
-<PoweredBySlidev mt-10 />
+## Questions?
+
