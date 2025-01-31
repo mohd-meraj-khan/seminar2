@@ -46,13 +46,8 @@ Mohd Meraj Khan
   Indian Institute of Technology Madras, Chennai, India, 600036
 </div>
 
-<div class="abs-br m-6 text-xl">
-  <a href="https://github.com/mohd-meraj-khan/LBM-for-scattering" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
-</div>
 
-<div class="abs-br m-1 text-2">
+<div class="abs-br m-1.5 text-2">
   Background image: https://pixabay.com
 </div>
 
@@ -62,10 +57,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# Scattering of electromagnetic waves
+## Scattering of electromagnetic waves
 
 
-<div v-click="1" class="text-center">
+<div v-click="1" class="text-center mt-5">
 Scattering of electromagnetic waves in nature
 </div>
 
@@ -75,7 +70,7 @@ Scattering of electromagnetic waves in nature
     <img src="/figures/scattering/sky_unsplash.jpg" alt="Image 1" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Blue sky and white cloud
-      <div class="text-1.25">(Source: unsplash.com)</div>
+      <div class="text-2">(Source: unsplash.com)</div>
     </figcaption>
   </figure>
   
@@ -83,7 +78,7 @@ Scattering of electromagnetic waves in nature
     <img src="/figures/scattering/rainbow_unsplash.jpg" alt="Image 2" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Rainbow
-      <div class="text-1.25">(Source: unsplash.com)</div>
+      <div class="text-2">(Source: unsplash.com)</div>
     </figcaption>
   </figure>
   
@@ -91,7 +86,7 @@ Scattering of electromagnetic waves in nature
     <img src="/figures/scattering/halo_wgrz.com.png" alt="Image 3" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Sundog and Halo
-      <div class="text-1.25">(Source: wgrz.com)</div>
+      <div class="text-2">(Source: wgrz.com)</div>
     </figcaption>
   </figure>
   
@@ -108,7 +103,7 @@ Engineering applications of electromagnetic scattering
     <img src="/figures/scattering/tower_unsplash.jpg" alt="Image 1" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Telecommunication tower
-      <div class="text-1.25">(Source: unsplash.com)</div>
+      <div class="text-2">(Source: unsplash.com)</div>
     </figcaption>
   </figure>
   
@@ -116,7 +111,7 @@ Engineering applications of electromagnetic scattering
     <img src="/figures/scattering/radar_noaa.gov.jpg" alt="Image 2" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Radar
-      <div class="text-1.25">(Source: noa.gov)</div>
+      <div class="text-2">(Source: noa.gov)</div>
     </figcaption>
   </figure>
   
@@ -124,7 +119,7 @@ Engineering applications of electromagnetic scattering
     <img src="/figures/scattering/NDT_sigmatest.org.jpg" alt="Image 3" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Non destructive testing
-      <div class="text-1.25">(Source: sigmatest.org)</div>
+      <div class="text-2">(Source: sigmatest.org)</div>
     </figcaption>
   </figure>
   
@@ -133,26 +128,25 @@ Engineering applications of electromagnetic scattering
 
 ---
 
-
-<div class="flex justify-between mb-0">
-  <!-- Slide Title -->
-  <h1>Radiation force</h1>
-  
-  <!-- Small Image -->
-  <div v-click="3" class="w-25 h-auto">
-    <img src="/figures/rad_force/paramecium.png" alt="Small Slide Image" class="rounded shadow">
-  </div>
-</div>
+## Radiation force
 
 
-<div class="relative w-full mt-0">
+<v-drag pos="852,15,94,_">
+<figure class="text-center">
+  <img src="/figures/rad_force/paramecium.png" alt="Image 2" class="w-full h-auto">
+</figure>
+</v-drag>
 
-<div v-click.hide="3" class="absolute grid grid-cols-2 gap-15 mt-3 place-items-center transition-opacity duration-100 opacity-100">
+
+
+<!-- <div class="relative w-full mt-0"> -->
+
+<!-- <div v-click.hide="3" class="absolute grid grid-cols-2 gap-15 mt-3 place-items-center transition-opacity duration-100 opacity-100">
   <figure v-click="1"  class="text-center">
     <img src="/figures/rad_force/comet_tail_forbes.com.gif" alt="Image 1" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       Comet tail
-      <div class="text-1.25">(Source: forbes.com)</div>
+      <div class="text-2">(Source: forbes.com)</div>
     </figcaption>
   </figure>
   
@@ -160,43 +154,41 @@ Engineering applications of electromagnetic scattering
     <img src="/figures/rad_force/IKAROS_solar_sail_wikimedia.jpg" alt="Image 2" class="w-full h-auto">
     <figcaption class="text-3 mt-2">
       IKAROS solar sail
-      <div class="text-1.25">(Source: wikimedia.org)</div>
+      <div class="text-2">(Source: wikimedia.org)</div>
     </figcaption>
   </figure>
-</div>
+</div> -->
 
 
 
 
-<div class="absolute grid grid-cols-2 gap-15 mt-3 place-items-center transition-opacity duration-100 opacity-100">
-  <figure v-click="3" class="text-center">
+<div class=" grid grid-cols-2 gap-15 mt-15">
+  <figure class="text-center">
     <video autoplay loop muted class="w-full h-auto">
       <source src="/figures/rad_force/Particl_Trapping_Nobel_2018.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <figcaption class="text-3 mt-2">
       Trapping of the fat particle of a Paramecium
-      <div class="text-1.5"> A Ashkin and J M Dziedzic (1989)</div>
+      <div class="text-2"> A Ashkin and J M Dziedzic (1989)</div>
     </figcaption>
   </figure>
   
-  <figure v-click="4" class="text-center">
+  <figure class="text-center">
     <video autoplay loop muted class="w-full h-auto">
       <source src="/figures/rad_force/Particl_Manipulation_Nobel_2018.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <figcaption class="text-3 mt-2">
       Manipulation of a diatom
-      <div class="text-1.5"> A Ashkin and J M Dziedzic (1989)</div>
+      <div class="text-2"> A Ashkin and J M Dziedzic (1989)</div>
     </figcaption>
   </figure>
 </div>
 
+<!--
 </div>
-
-
-
-
+-->
 
 ---
 
@@ -204,7 +196,7 @@ Engineering applications of electromagnetic scattering
 
 
 
-# Electromagnetic spectrum
+## Electromagnetic spectrum
 
 <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
     <img src="/figures/EM_Spectrum_Properties_edit.svg" alt="Image 1" style="max-height: 100%; width: auto;">
@@ -219,7 +211,7 @@ Engineering applications of electromagnetic scattering
 layout: default
 ---
 
-# Scattering regimes
+## Scattering regimes
 
 <div style="display: flex; justify-content: center; text-align: center;">
     <img src="/figures/scattering_Schematic.svg" alt="Image 1">
@@ -257,7 +249,7 @@ layout: two-cols
 layoutClass: gap-16
 ---
 
-# Governing equations
+## Governing equations
 
 
 
@@ -313,7 +305,7 @@ layout: two-cols-header
 layoutClass: gap-10
 ---
 
-# Lattice Boltzmann method
+## Lattice Boltzmann method
 
 ::left::
 
@@ -321,18 +313,13 @@ layoutClass: gap-10
   <img src="/figures/LBM_scale.png" alt="Image 1" class="h-auto">
 </div>
 
-<div v-click="6" class="mt-10">
-Macroscopic quantity
-$$
-\Sigma_{i} f_i (\vec{x}, t)
-$$
-</div>
+
 
 
 
 ::right::
 
-<div v-click="1" class="mt-0">
+<div v-click="1" class="mt-0 text-3">
 Distribution function (Particle population)
 $$
 f (\vec{x}, \vec{c}, t)
@@ -340,7 +327,7 @@ $$
 </div>
 
 
-<div v-click="2" class="mt-0">
+<div v-click="2" class="mt-0 text-3">
 Lattice Boltzmann equation
 $$
 \begin{aligned}
@@ -350,7 +337,7 @@ $$
 </div>
 
 
-<div v-click="4" class="mt-0">
+<div v-click="4" class="mt-0 text-3">
 $$
 \begin{aligned}
 \Omega_i (\vec{x}, t) &= - \frac{f_i (\vec{x}, t) - f_i^{eq} (\vec{x}, t)}{\tau} \Delta t \\[1.0em]
@@ -359,7 +346,7 @@ $$
 </div>
 
 
-<div v-click="5" class="mt-0">
+<div v-click="5" class="mt-0 text-3">
 $$
 \begin{aligned}
 f_i (\vec{x} + \vec{c}_i \Delta t, t + \Delta t) &= \left( 1 - \frac{\Delta t}{\tau} \right) f_i (\vec{x}, t) + \frac{\Delta t}{\tau} f_i^{eq} (\vec{x}, t)  \\[1.0em]
@@ -367,20 +354,27 @@ f_i (\vec{x} + \vec{c}_i \Delta t, t + \Delta t) &= \left( 1 - \frac{\Delta t}{\
 $$
 </div>
 
+<div v-click="6" class="mt-0 text-3">
+Macroscopic quantity
+$$
+\Sigma_{i} f_i (\vec{x}, t)
+$$
+</div>
 
 
 
-<v-drag v-click="3" pos="809,191,117,_">
+
+<v-drag v-click="3" pos="824,165,117,_">
   <div text-center text-3 border border-main rounded>
     Collision operator
   </div>
 </v-drag>
 
 
-<v-drag-arrow v-click="3" pos="856,220,-30,37" op70 />
+<v-drag-arrow v-click="3" pos="854,189,-34,31" op70 />
 
 
-<v-drag v-click="4" v-click.hide="5" pos="640,393,164,_">
+<v-drag v-click="4" v-click.hide="5" pos="647,337,164,_">
   <div text-center text-3 border border-main rounded>
     BGK collision operator
   </div>
@@ -398,7 +392,7 @@ layout: two-cols-header
 layoutClass: gap-10
 ---
 
-# Lattice Boltzmann method
+## Lattice Boltzmann method
 
 
 ::left::
@@ -457,30 +451,114 @@ layout: two-cols-header
 layoutClass: gap-10
 ---
 
-# Lattice Boltzmann method for electrodynamics
-
+## Lattice Boltzmann method for electrodynamics
 
 ::left::
 
-<figure class="text-center item-center my-0">
-  <img src="/figures/LBM_Kruger.png" alt="Image 1" class="h-auto">
-</figure>
 
-<div v-click="1" class="justify-between item-center mt-0 text-3">
-$$
-\vec{e}_{i}(\vec{x} + \vec{c}_i\Delta t, t + \Delta t) = \left(1 - \frac{\Delta t}{\tau} \right) \vec{e}_{i}(\vec{x} ,t) + \frac{\Delta t}{\tau} \vec{e}_{i}^{eq}(\vec{x} ,t)
-$$
-</div>
 
-<div v-click="2" class="mt-0 text-3">
+
+
+<div v-click class="text-3">
+Lattice Boltzmann equation
 $$
+\begin{aligned}
+\vec{e}_{i}(\vec{x} + \vec{c}_i\Delta t, t + \Delta t) = \left(1 - \frac{\Delta t}{\tau} \right) \vec{e}_{i}(\vec{x} ,t) + \frac{\Delta t}{\tau} \vec{e}_{i}^{eq}(\vec{x} ,t) \\[1.0em]
 \vec{h}_{i}(\vec{x} + \vec{c}_i\Delta t, t + \Delta t) = \left(1 - \frac{\Delta t}{\tau} \right) \vec{h}_{i}(\vec{x} ,t) + \frac{\Delta t}{\tau} \vec{h}_{i}^{eq}(\vec{x} ,t)
+\end{aligned}
 $$
 </div>
 
+<div h-5 />
+
+<div v-click class="text-3">
+$$
+\Delta t = 1 \hspace{10pt} \textcolor{grey}{and} \hspace{10pt} \tau = \frac{1}{2}
+$$
+
+</div>
+
+<div h-5 />
+
+<div v-click class="text-3">
+$$
+\begin{aligned}
+\vec{e}_{i}(\vec{x} + \vec{c}_i, t + 1) =  2 \vec{e}_{i}^{eq}(\vec{x} ,t) - \vec{e}_{i}(\vec{x} ,t) \\[1.0em]
+\vec{h}_{i}(\vec{x} + \vec{c}_i, t + 1) =  2 \vec{h}_{i}^{eq}(\vec{x} ,t) - \vec{h}_{i}(\vec{x} ,t)
+\end{aligned}
+$$
+</div>
+
+
+<div v-click class="mt-1 text-3">
+Macroscopic fields
+$$
+\begin{aligned}
+\vec{E} (\vec{x}, t) = \frac{\sum_i \vec{e_i}  (\vec{x}, t)}{\varepsilon_r} \hspace{10pt} \textcolor{grey}{and} \hspace{10pt} \vec{H} (\vec{x}, t) =  \frac{\sum_i \vec{h_i}  (\vec{x}, t)}{\mu_r}   
+\end{aligned}
+$$
+
+</div>
 
 
 ::right::
+
+
+
+<div v-click class="mt-1 text-3">
+Equilibrium distribution functions
+$$
+\begin{aligned}
+\vec{e}_i^{eq} = 
+    \begin{cases}
+      \frac{1}{6}\Big(\vec{E} -   \vec{c}_i \times \vec{H} \Big) & \text{if $i \neq 0$}\\
+      (\varepsilon_{r} - 1 ) \vec{E} & \text{if $i = 0$}
+    \end{cases} \\[2.0em]
+\vec{h}_i^{eq} = 
+    \begin{cases}
+      \frac{1}{6}\Big(\vec{H} +  \vec{c}_i \times \vec{E} \Big) & \text{if $i \neq 0$}\\
+      (\mu_{r} - 1 ) \vec{H} & \text{if $i = 0$}
+    \end{cases}  
+\end{aligned}
+$$
+
+</div>
+
+
+
+<div v-click class="mt-1 text-3">
+Chapman-Enskog expansion
+$$
+\begin{aligned}
+\nabla \times \vec{E} = - 3 \mu_r \frac{\partial \vec{H}}{\partial t} \hspace{10pt} \textcolor{grey}{and} \hspace{10pt}
+\nabla \times \vec{H} =  3 \varepsilon_r \frac{\partial \vec{E}}{\partial t}  
+\end{aligned}
+$$
+
+</div>
+
+
+<div v-click class="mt-1 text-3">
+Initilization
+$$
+\begin{aligned}
+\nabla \cdot \vec{E} = 0 \hspace{10pt} \textcolor{grey}{and} \hspace{10pt} \nabla \cdot \vec{H} =  0 
+\end{aligned}
+$$
+
+</div>
+
+
+<div v-click class="mt-1 text-3">
+Wave velocity
+$$
+\begin{aligned}
+v = \frac{1}{3 \sqrt{\mu_r \varepsilon_r}}
+\end{aligned}
+$$
+
+</div>
+
 
 
 
@@ -491,29 +569,50 @@ $$
 ---
 
 
-# Research focus
+## Research objectives
 
 
 
 <div class="flex flex-col items-start justify-center h-3/4 text-5 space-y-3">
   <div class="opacity-100">
-    1. This text fades out partially.
+    1. Explore the Lattice Boltzmann Method (LBM) for scattering of electromagnetic (EM) waves and radiation force calculations on 2D curved geometries.
   </div>
   
   <div class="opacity-100">
-    2. This text fades in partially.
+    2. Establish the LBM as a numerical method for scattering of EM waves.
   </div>
 
   <div class="opacity-100">
-    3. This text fades in partially.
+    3. Investigate the LBM for composite materials and determine the radiation force on composite cylinders.
   </div>
 </div>
 
 
+---
+
+
+## Research focus
+
+
+
+<div class="flex flex-col items-start justify-center h-3/4 text-5 space-y-3">
+  <div class="opacity-100">
+    1. Explore the Lattice Boltzmann Method (LBM) for scattering of electromagnetic (EM) waves and radiation force calculations on 2D curved geometries.
+  </div>
+  
+  <div class="opacity-20">
+    2. Establish the LBM as a numerical method for scattering of EM waves.
+  </div>
+
+  <div class="opacity-20">
+    3. Investigate the LBM for composite materials and determine the radiation force on composite cylinders.
+  </div>
+</div>
+
 
 ---
 
-# Circular conducting cylinder
+## Circular conducting cylinder
 
 Scattering width and radiation force
 
@@ -569,10 +668,10 @@ $$
 
 ---
 
-# Corrugated elliptical conducting cylinder
+## Corrugated elliptical conducting cylinder
 
 <div class="flex flex-col gap-10 place-items-center">
-  <figure class="text-center">
+  <figure class="text-center mt-5">
     <img src="/figures/JAP/corrugatedSnap.svg" alt="Image 1" class="w-auto h-auto">
   </figure>
 
@@ -582,7 +681,7 @@ $$
 </div>
 
 
-<v-drag pos="156,429,105,_">
+<v-drag pos="581,440,105,_">
   <div text-center text-3 border border-main rounded>
     F.G. Mitri (2019)
   </div>
@@ -590,7 +689,7 @@ $$
 
 ---
 
-# Circular dielectric cylinder
+## Circular dielectric cylinder
 
 Scattering width
 
@@ -729,7 +828,7 @@ Resonance peak
 
 ---
 
-# Sharp edged scatterer
+## Sharp edged scatterer
 
 
 <div class="grid grid-cols-3 gap-0 place-items-center text-center mt-0">
@@ -768,7 +867,7 @@ Resonance peak
 ---
 
 
-# Multiple scatterers
+## Multiple scatterers
 
 
 
@@ -800,10 +899,30 @@ Resonance peak
 
 ---
 
+## Research objectives
 
-# Normal incidence at a plane wall (1 D)
 
-<div v-click="1" class="text-center text-4 mb-1">
+
+<div class="flex flex-col items-start justify-center h-3/4 text-5 space-y-3">
+  <div class="opacity-20">
+    1. Explore the Lattice Boltzmann Method (LBM) for scattering of electromagnetic (EM) waves and radiation force calculations on 2D curved geometries.
+  </div>
+  
+  <div class="opacity-100">
+    2. Establish the LBM as a numerical method for scattering of EM waves.
+  </div>
+
+  <div class="opacity-20">
+    3. Investigate the LBM for composite materials and determine the radiation force on composite cylinders.
+  </div>
+</div>
+
+
+---
+
+## Normal incidence at a plane wall (1 D)
+
+<div v-click="1" class="text-center text-4 mb-1 mt-5">
   Permeability of the wall is fixed
 </div>
 
@@ -831,11 +950,20 @@ Resonance peak
   </figure>
 </div>
 
+
+<v-drag pos="800,39,92,_">
+<div v-click="1"  class="text-3 text-left">
+$$
+\lambda / \Delta x  = 20
+$$
+</div>
+</v-drag>
+
 ---
 
-# Circular cylinder of infinite length (2 D)
+## Circular cylinder of infinite length (2 D)
 
-<div v-click="1" class="text-center text-4 mb-1">
+<div v-click="1" class="text-center text-4 mb-1 mt-5">
   Perfect electric conductor
 </div>
 
@@ -908,6 +1036,55 @@ $$
 </div>
 </v-drag>
 
+
+<v-drag pos="723,33,228,_">
+<div v-click="3"  class="text-3 text-left">
+$$
+\lambda_{inc} / \Delta x = 50
+$$
+</div>
+</v-drag>
+
+
+
+<v-drag pos="11,316,69,_">
+<div v-click="3"  class="text-3 text-left">
+$$
+L/a = 20
+$$
+</div>
+</v-drag>
+
+
+<v-drag pos="259,312,95,_">
+<div v-click="3"  class="text-3 text-left">
+$$
+L/a = 10
+$$
+</div>
+</v-drag>
+
+
+<v-drag pos="875,304,72,_">
+<div v-click="3"  class="text-3 text-left">
+$$
+L/a = 4
+$$
+</div>
+</v-drag>
+
+<v-drag-arrow v-click="3" pos="909,357,-45,61"  op70 />
+
+<v-drag-arrow v-click="3" pos="911,315,-57,-42" op70 />
+
+<v-drag-arrow v-click="3" pos="312,356,71,44" op70 />
+
+<v-drag-arrow v-click="3" pos="317,328,65,-59" op70 />
+
+<v-drag-arrow v-click="3" pos="55,363,47,35" op70 />
+
+<v-drag-arrow v-click="3" pos="56,331,49,-42" op70 />
+
 ---
 
 Dielectric for $a / \lambda = 1$
@@ -970,9 +1147,18 @@ $$
 </div>
 </v-drag>
 
+
+<v-drag pos="404,29,228,_">
+<div v-click="1"  class="text-3 text-left">
+$$
+\min \{\lambda / \Delta x \} = 50, \hspace{10pt} L/a = 10
+$$
+</div>
+</v-drag>
+
 ---
 
-# Sphere (3D)
+## Sphere (3D)
 
 
 <div class="grid grid-cols-2 gap-3 mt-3">
@@ -995,15 +1181,45 @@ $$
 </v-drag>
 
 
+<v-drag pos="467,458,72,_">
+<div class="text-4 text-left">
+$$
+r/a = 5
+$$
+</div>
+</v-drag>
+
+
 <div class="abs-bl m-1 text-2">
   C.A. Balanis (2012)
 </div>
 
 ---
+
+## Research objectives
+
+
+
+<div class="flex flex-col items-start justify-center h-3/4 text-5 space-y-3">
+  <div class="opacity-20">
+    1. Explore the Lattice Boltzmann Method (LBM) for scattering of electromagnetic (EM) waves and radiation force calculations on 2D curved geometries.
+  </div>
+  
+  <div class="opacity-20">
+    2. Establish the LBM as a numerical method for scattering of EM waves.
+  </div>
+
+  <div class="opacity-100">
+    3. Investigate the LBM for composite materials and determine the radiation force on composite cylinders.
+  </div>
+</div>
+
+
+---
 layout: two-cols-header
 ---
 
-# Composite cylinder
+## Composite cylinder
 
 Scattering width
 
@@ -1066,6 +1282,15 @@ $$
 </v-drag>
 
 
+<v-drag pos="363,491,228,_">
+<div v-click="1"  class="text-3 text-left">
+$$
+\min \{\lambda / \Delta x \} = 50, \hspace{10pt} L/a = 10
+$$
+</div>
+</v-drag>
+
+
 <v-drag pos="593,341,224,_">
 <div v-click="1" class="mt-3">
   <figure class="text-center">
@@ -1075,7 +1300,7 @@ $$
 </v-drag>
 
 
-<v-drag pos="607,94,168,_">
+<v-drag pos="780,503,168,_">
   <div text-center text-3 border border-main rounded>
     Hurd and Sachdeva (1975)
   </div>
@@ -1126,6 +1351,22 @@ LBM solutions
   </figure>
   
 </div>
+
+
+<v-drag pos="820,17,94,_">
+<figure class="text-center">
+  <img src="/figures/Janus/janus.png" alt="Image 2" class="w-full h-auto">
+</figure>
+</v-drag>
+
+
+<v-drag pos="624,24,169,_">
+<div v-click="2"  class="text-3 text-left">
+$$
+a / \Delta x = 40,  \hspace{10pt} L/a = 4
+$$
+</div>
+</v-drag>
 
 ---
 
@@ -1201,7 +1442,7 @@ $$
 </v-drag>
 
 
-<v-drag pos="17,127,53,_">
+<v-drag pos="17,127,60,_">
 <div v-click="1"  class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 1
@@ -1235,10 +1476,72 @@ $$
 </v-drag>
 
 
+<v-drag pos="663,1,169,_">
+<div v-click="1"  class="text-3 text-left">
+$$
+a / \Delta x = 30,  \hspace{10pt} L/a = 4
+$$
+</div>
+</v-drag>
+
+
+<v-drag pos="418,11,222,_">
+<div v-click="1"  class="text-3 text-left">
+4 Parallel threads, 35 secs / simulation 18281 simulations,  1 week
+</div>
+</v-drag>
+
+---
+class: text-4
+---
+
+## Visible research output
+
+
+| Publications                                    |
+|-----------------------------------------------|
+| 1. Electromagnetic scattering by curved surfaces and calculation of radiation force: Lattice Boltzmann simulations <br> <span class="text-3" ><b>Mohd. Meraj Khan</b>, Sumesh P Thampi and Anubhab Roy <i> J. App. Phys. 136, 19</i> </span> |
+| 2. Scattering of electromagnetic waves using lattice Boltzmann method <br> <span class="text-3" ><b>Mohd. Meraj Khan</b>, Sumesh P Thampi and Anubhab Roy <i> Under preparation for J. Comput. Phys </i> </span> |
+| 3. Radiation Force and Torque on a Dielectric Janus Cylinder by Lattice Boltzmann Method <br> <span class="text-3" ><b>Mohd. Meraj Khan</b>, Sumesh P Thampi and Anubhab Roy <i> Under preparation for Phys. Rev. E </i> </span> |
+
+
+---
+class: text-4
+---
+
+## Visible research output
+
+
+
+
+| Conferences                                    |
+|-----------------------------------------------|
+| 1. Attended “DSFD 2022", conducted online, and presented a talk titled ‘Lattice Boltzmann method for scattering of electromagnetic waves by curved geometries', 22-26 Aug 2022, Suzhou, China |
+| 2. Attended CompFlu 2022", and presented a poster titled ‘Electromagnetic wave scattering by dielectric Janus particles', 19-21 Dec 2022, IIT Kharagpur |
+| 3. Attended ISMC 2023", and presented a poster titled ‘Radiation force and torque on a dielectric Janus particle', 04-08 Sep 2023, Osaka Japan |
+
+
+---
+
+## Conclusion
+
+
+gyuuo
+
+---
+
+## Timeline
+
+
+iuiuy87y
 
 ---
 layout: center
 class: text-center
 ---
 
-# Thank you!
+## Thank you!
+
+<div class="m-5">
+  <a href="https://github.com/mohd-meraj-khan/LBM-for-scattering" target=_blank>https://github.com/mohd-meraj-khan/LBM-for-scattering</a> 
+</div>
