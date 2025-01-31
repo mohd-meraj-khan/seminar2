@@ -21,7 +21,6 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: false
 
-slideNumber: true
 ---
 
 ## Lattice Boltzmann Method for Electromagnetic Wave Scattering and Radiation Force Computation
@@ -45,7 +44,7 @@ Mohd Meraj Khan
 </div>
 
 
-<div class="abs-br m-1.5 text-2">
+<div class="abs-bl m-1.5 text-2">
   Background image: https://pixabay.com
 </div>
 
@@ -245,9 +244,6 @@ $$
 </v-drag>
 
 
-<div v-click="1" class="abs-bl m-2 text-2">
-  Griffiths (2013)
-</div>
 
 
 <div class="abs-br m-2 text-3">
@@ -610,13 +606,13 @@ layoutClass: gap-10
 
 
 
-<figure class="flex flex-col text-center item-center mt-35">
+<figure class="flex flex-col text-center item-center mt-18">
     <img src="/figures/RCS_PEC_sphere.svg" alt="Image 1" class="w-auto h-auto">
 </figure>
 
 
 
-<v-drag pos="643,111,186,_">
+<v-drag pos="656,79,186,_">
 <div  class="text-4 text-left">
 $$
 \sigma = \lim_{r \to \infty} 4 \pi r^2 \frac{| \vec{E}^S|^2}{| \vec{E}^I|^2}
@@ -625,7 +621,7 @@ $$
 </v-drag>
 
 
-<v-drag pos="479,470,72,_">
+<v-drag pos="479,455,72,_">
 <div class="text-4 text-left">
 $$
 r/a = 5
@@ -792,7 +788,7 @@ $$
 </v-drag>
 
 
-<v-drag pos="780,503,168,_">
+<v-drag pos="617,97,168,_">
   <div text-center text-3 border border-main rounded>
     Hurd and Sachdeva (1975)
   </div>
@@ -876,7 +872,7 @@ $$
 
 
 
-<div class="mt-20">
+<div class="mt-10">
 
 - Benchmarked the LBM for
 
