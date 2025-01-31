@@ -874,7 +874,13 @@ $$
 
 <div class="mt-10">
 
-- Benchmarked the LBM for
+- LBM demonstrates effectiveness for scattering computations across a wide range of size parameters and refractive indices.
+
+- LBM is well-suited for handling scatterers with sharp edges.
+
+- LBM efficiently handles scenarios involving multiple scatterers.
+
+- LBM proves suitable for composite scatterer configurations.
 
 </div>
 
