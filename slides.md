@@ -758,13 +758,6 @@ $$
 
 </div>
 
-<v-drag pos="781,44,131,_">
-<div v-click="3"  class="text-3 text-left">
-$$
-\lambda_T  = 20 \times \Delta x
-$$
-</div>
-</v-drag>
 
 <div v-click="1" class="abs-bl m-2 text-2">
   Griffiths (2013)
@@ -774,120 +767,13 @@ $$
   <SlideCurrentNo />
 </div>
 
----
-layout: two-cols-header
-layoutClass: gap-10
----
-
-## Normal Incidence Plane Wave Scattering by Circular Cylinder
-
-::left::
-
-<div v-click="1" class="text-3 mt-0">
-Perfect electric conductor (PEC)
-$$
-\begin{aligned}
-{E}_z^S &= \Re \left[ {E}_0 \sum_{m=-\infty}^{+\infty} (-i)^m A_m H_m^{(2)} \left(k_0 r \right) e^{im\phi} e^{i \omega t} \right] \\[2.0em]
-A_m &= - \frac{J_m \left( k_0 a \right) }{H_m^{(2)} \left( k_0 a \right) }
-\end{aligned}
-$$
-</div>
-
-<div h-1 />
-
-<div v-click="2" class="mt-0 text-3">
-Dielectric
-$$
-\begin{aligned}
-{E}_z^S &= \Re \left[ {E}_0 \sum_{m = - \infty}^{+ \infty} (-i)^m B_m H_m^{(2)}\left( k_0 r \right)e^{im\phi} e^{i \omega t} \right] \\[1.0em]
-{E}_z^T &= \Re \left[ {E}_0 \sum_{m = - \infty}^{+ \infty} (-i)^m C_m J_m \left( k_1 r \right) e^{im\phi} e^{i \omega t} \right] \\[2.0em]
-B_m &=  \frac{J_m^{'}(k_0 a) J_m(k_1 a) - \sqrt{\frac{\varepsilon_r}{\mu_r}} J_m(k_0 a) J_m^{'} (k_1 a)}{\sqrt{\frac{\varepsilon_r}{\mu_r}} H_m^{(2)}(k_0 a) J_m^{'} (k_1 a) - H_m^{(2)'} (k_0 a) J_m(k_1 a)} \\[1.0em]
-C_m &= \frac{ J_m^{'}(k_0 a) H_m^{(2)}(k_0 a) - H_m^{(2)'} (k_0 a) J_m(k_0 a)}{\sqrt{\frac{\varepsilon_r}{\mu_r}} H_m^{(2)}(k_0 a) J_m^{'} (k_1 a) - H_m^{(2)'} (k_0 a) J_m(k_1 a)}
-\end{aligned}
-$$
-
-</div>
-
-::right::
-
-<figure class="text-center mt-5">
-    <img src="/figures/DomainSchematic.svg" alt="Image 1" class="w-full h-auto">
-</figure>
-
-<div v-click="1" class="abs-bl m-2 text-2">
-  C.A. Balanis (2012)
-</div>
-
-<div class="abs-br m-2 text-3">
-  <SlideCurrentNo />
-</div>
 
 ---
 layout: two-cols-header
 layoutClass: gap-5
 ---
 
-## Normal Incidence Plane Wave Scattering by Circular Cylinder
 
-Near-to-Far-Field Transformation
-
-::left::
-
-<div class="text-3">
-Scattering width
-$$
-\begin{aligned}
-\sigma = \lim_{r \to \infty} 2 \pi r \frac{|\vec{E}^S|^2}{|\vec{E}^I|^2}
-\end{aligned}
-$$
-</div>
-
-<figure v-click="1" class="flex text-center w-3/4 mt-10">
-  <img src="/figures/farfield1.png" alt="Image 2" class="w-full h-auto">
-</figure>
-
-::right::
-
-<div v-click="2" class="mt-1 text-3">
-Currents at the fictitous boundary
-$$
-\begin{aligned}
-\vec{J}(\vec{r'}) = \hat{n'} \times \vec{H} (\vec{r'}) \\[1.0em]
-\vec{M}(\vec{r'}) = - \hat{n'} \times \vec{E} (\vec{r'})
-\end{aligned}
-$$
-</div>
-
-<div v-click="3" class="mt-1 text-3">
-Vector potentails at far-distance
-$$
-\begin{aligned}
-\vec{A}(\vec{r}) = - i \frac{\mu}{4} \oint_L \vec{J} (\vec{r'}) H_0^{(2)} ( k_0 | \vec{r} - \vec{r'} | ) dl' \\[1.0em]
-\vec{F}(\vec{r}) = - i \frac{\varepsilon}{4} \oint_L \vec{M} (\vec{r'}) H_0^{(2)} ( k_0 | \vec{r} - \vec{r'} | ) dl'
-\end{aligned}
-$$
-</div>
-
-<div v-click="4" class="mt-1 text-3">
-Far-field electric and magnetic fields
-$$
-\begin{aligned}
-\vec{E}(\vec{r}) = - i \omega \left[ \vec{A} (\vec{r}) + \frac{1}{k_0^2} \nabla \left\{ \nabla \cdot \vec{A} (\vec{r}) \right\} \right] - \frac{1}{\varepsilon} \nabla \times \vec{F} (\vec{r}) \\[1.0em]
-\vec{H}(\vec{r}) = - i \omega \left[ \vec{F} (\vec{r}) + \frac{1}{k_0^2} \nabla \left\{ \nabla \cdot \vec{F} (\vec{r}) \right\} \right] + \frac{1}{\mu} \nabla \times \vec{A} (\vec{r})
-\end{aligned}
-$$
-
-</div>
-
-<div class="abs-bl m-2 text-2">
-  https://eecs.wsu.edu/~schneidj/ufdtd/
-</div>
-
-<div class="abs-br m-2 text-3">
-  <SlideCurrentNo />
-</div>
-
----
 
 ## Normal Incidence Plane Wave Scattering by Circular Cylinder
 
@@ -961,49 +847,18 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="830,74,139,_">
-<div v-click="1"  class="text-2.5 text-left">
-$$
-\min \{ \lambda_{inc}, a \} = 50 \times \Delta x
-$$
-</div>
-</v-drag>
 
-<v-drag pos="11,316,69,_">
-<div v-click="3"  class="text-3 text-left">
+<v-drag pos="802,78,128,_">
+<div class="text-3 text-left">
 $$
-L/a = 20
+\begin{aligned}
+\sigma = \lim_{r \to \infty} 2 \pi r \frac{|\vec{E}^S|^2}{|\vec{E}^I|^2}
+\end{aligned}
 $$
 </div>
 </v-drag>
 
-<v-drag pos="259,312,95,_">
-<div v-click="3"  class="text-3 text-left">
-$$
-L/a = 10
-$$
-</div>
-</v-drag>
 
-<v-drag pos="875,304,72,_">
-<div v-click="3"  class="text-3 text-left">
-$$
-L/a = 4
-$$
-</div>
-</v-drag>
-
-<v-drag-arrow v-click="3" pos="909,357,-45,61"  op70 />
-
-<v-drag-arrow v-click="3" pos="911,315,-57,-42" op70 />
-
-<v-drag-arrow v-click="3" pos="312,356,71,44" op70 />
-
-<v-drag-arrow v-click="3" pos="317,328,65,-59" op70 />
-
-<v-drag-arrow v-click="3" pos="55,363,47,35" op70 />
-
-<v-drag-arrow v-click="3" pos="56,331,49,-42" op70 />
 
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
@@ -1083,38 +938,7 @@ $$
 </div>
 </v-drag>
 
-<!-- <v-drag pos="15,474,55,_">
-<div v-click="2"  class="text-2 text-left">
-$$
-\frac{a}{\lambda} = \frac{1}{10}
-$$
-</div>
-</v-drag>
 
-<v-drag pos="312,482,55,_">
-<div v-click="2"  class="text-2 text-left">
-$$
-\frac{a}{\lambda} = 1
-$$
-</div>
-</v-drag>
-
-
-<v-drag pos="885,459,55,_">
-<div v-click="2"  class="text-2 text-left">
-$$
-\frac{a}{\lambda} = 10
-$$
-</div>
-</v-drag> -->
-
-<v-drag pos="830,74,139,_">
-<div v-click="1"  class="text-2.5 text-left">
-$$
-\min \{ \lambda_{inc}, a \} = 50 \times \Delta x
-$$
-</div>
-</v-drag>
 
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
@@ -1178,13 +1002,6 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="749,79,228,_">
-<div v-click="1"  class="text-3 text-left">
-$$
-\lambda_{\varepsilon_r} = 50 \times \Delta x, \hspace{10pt} L/a = 10
-$$
-</div>
-</v-drag>
 
 
 <v-drag pos="481,91,55,_">
@@ -1223,7 +1040,7 @@ Considering dielectric constant
   </figure>
 </div>
 
-<v-drag pos="905,77,55,_">
+<v-drag pos="893,77,67,_">
 <div v-click="1"  class="text-3 text-left">
 $$
 a / \lambda = 1
@@ -1263,13 +1080,6 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="652,76,228,_">
-<div v-click="1"  class="text-3 text-left">
-$$
-\lambda_{\varepsilon_r} = 50 \times \Delta x, \hspace{10pt} L/a = 10
-$$
-</div>
-</v-drag>
 
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
@@ -1292,40 +1102,15 @@ layoutClass: gap-10
 
 <div class="relative w-full mt-0">
 
-<div v-click.hide="3" class="absolute mt-5 place-items-center transition-opacity duration-100 opacity-100">
 
-<div v-click="1" class="mt-1 text-3">
-Scattered electric fields
-$$
-\begin{aligned}
-E_r^S &= -i E_0 \cos{\phi} \sum_{n = 1}^{+ \infty} b_n \left[ \hat{H}_n^{(2)''}(k_1 r) + \hat{H}_n^{(2)}(k_1 r) \right] P_n^1 (\cos{\theta}) \\[1.0em]
-E_{\theta}^S &= \frac{E_0}{k_1 r} \cos{\phi} \sum_{n = 1}^{+ \infty} \left[ i b_n \hat{H}_n^{(2)'}(k_1 r) \sin{\theta} P'{_n}^1 (\cos{\theta}) - c_n \hat{H}_n^{(2)}(k_1 r) \frac{P_n^1 (\cos{\theta})}{\sin{\theta}} \right]  \\[1.0em]
-E_{\phi}^S &= \frac{E_0}{k_1 r} \sin{\phi} \sum_{n = 1}^{+ \infty} \left[ i b_n \hat{H}_n^{(2)'}(k_1 r) \frac{P_n^1 (\cos{\theta})}{\sin{\theta}} - c_n \hat{H}_n^{(2)}(k_1 r) \sin{\theta} P'{_n}^1 (\cos{\theta}) \right]  \\[1.0em]
-\end{aligned}
-$$
-</div>
 
-<div v-click="2" class="mt-1 text-3">
-Constants
-$$
-\begin{aligned}
-b_n &=  \frac{- \sqrt{\varepsilon_r} \hat{J}_n^{'}(k_0 a) \hat{J}_n(k_1 a) + \sqrt{\mu_r} \hat{J}_n(k_0 a) \hat{J}_n^{'} (k_1 a)}{\sqrt{\varepsilon_r} 
-\hat{H}_n^{(2')}(k_0 a) \hat{J}_n (k_1 a) - \sqrt{\mu_r} \hat{H}_n^{(2)} (k_0 a) \hat{J}_n^{'}(k_1 a)} \\[1.0em]
-c_n &=  \frac{- \sqrt{\varepsilon_r} \hat{J}_n(k_0 a) \hat{J}_n^{'}(k_1 a) + \sqrt{\mu_r} \hat{J}_n^{'}(k_0 a) \hat{J}_n (k_1 a)}{\sqrt{\varepsilon_r} 
-\hat{H}_n^{(2)}(k_0 a) \hat{J}_n^{'} (k_1 a) - \sqrt{\mu_r} \hat{H}_n^{(2')} (k_0 a) \hat{J}_n(k_1 a)} \\[1.0em]
-\end{aligned}
-$$
-</div>
-
-</div>
-
-<figure v-click="3" class="absolute flex flex-col text-center item-center mt-35">
+<figure class="absolute flex flex-col text-center item-center mt-35">
     <img src="/figures/RCS_PEC_sphere.svg" alt="Image 1" class="w-auto h-auto">
 </figure>
 
 </div>
 
-<v-drag v-click="3" pos="591,109,186,_">
+<v-drag pos="591,109,186,_">
 <div  class="text-4 text-left">
 $$
 \sigma = \lim_{r \to \infty} 4 \pi r^2 \frac{| \vec{E}^S|^2}{| \vec{E}^I|^2}
@@ -1333,7 +1118,7 @@ $$
 </div>
 </v-drag>
 
-<v-drag v-click="3" pos="493,455,72,_">
+<v-drag pos="493,455,72,_">
 <div class="text-4 text-left">
 $$
 r/a = 5
@@ -1643,13 +1428,6 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="363,491,228,_">
-<div v-click="1"  class="text-3 text-left">
-$$
-\lambda_{\varepsilon_{r_1}} = 50 \times \Delta x, \hspace{10pt} L/a = 10
-$$
-</div>
-</v-drag>
 
 <v-drag pos="593,341,224,_">
 <div v-click="1" class="mt-3">
@@ -1716,13 +1494,7 @@ LBM solutions
 </figure>
 </v-drag>
 
-<v-drag pos="624,24,169,_">
-<div v-click="2"  class="text-3 text-left">
-$$
-a = 40 \times \Delta x,  \hspace{10pt} L/a = 4
-$$
-</div>
-</v-drag>
+
 
 
 
@@ -1856,20 +1628,7 @@ $$
 </figure>
 </v-drag>
 
-<v-drag pos="663,1,169,_">
-<div v-click="1"  class="text-3 text-left">
-$$
-a = 3
-0 \times \Delta x,  \hspace{10pt} L/a = 4
-$$
-</div>
-</v-drag>
 
-<v-drag pos="436,26,222,_">
-<div v-click="1"  class="text-3 text-left">
-4 Parallel threads, 35 secs / simulation 18281 simulations,  1 week
-</div>
-</v-drag>
 
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
